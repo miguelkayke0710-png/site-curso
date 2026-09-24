@@ -1,51 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+
+    <title>Ficha do Jogador</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <header>
 
-        <H1>PLAYER PROFILE</h1>
+<body class="sobre-mim">
 
-    </header>
+    <a href="mapa.html" class="botao-voltar">← Voltar</a>
 
-    <div class='player-profile'>
+    <main class="ficha">
 
-        <h2> MIGUEL KAYKE</h2>
+        <h1>FICHA DO JOGADOR</h1>
 
-        <p>
-            Estudante de ADS<br>
-            Futuro desenvolvedor backend<br>
-            Amante por tecnologia<br>
-        </p>
+        <section class="perfil">
 
-    </div>
+            <div class="foto-jogador">
+                <img src="imagens/foto-perfil.jpeg" alt="Foto de Miguel Kayke">
+            </div>
 
-    <div class='sobre-mim'>
+            <div class="informacoes">
 
-        <h2>SOBRE MIM</h2>
+                <h2>MIGUEL KAYKE</h2>
 
-        <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e em constante busca por novos conhecimentos. Tenho conhecimentos em HTML, CSS, JavaScript e Python, além de familiaridade com hardware, software, Git e GitHub. <br>
-            Tenho experiência na criação de sites e projetos práticos, utilizando a programação para transformar ideias em soluções funcionais. Também estou iniciando meus estudos em bancos de dados e buscando ampliar minha experiência em desenvolvimento de sistemas. <br>
-        </p>
+                <p><strong>Classe:</strong> Desenvolvedor em formação</p>
 
-    </div>
+                <p><strong>Nível:</strong> 18</p>
 
-    <div class='ojetivo'>
+                <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
 
-        <h2>OBJETIVO</h2>
-        <p>
-            Meu objetivo é construir uma carreira sólida na área de tecnologia, adquirindo experiência profissional e aprimorando continuamente meus conhecimentos em desenvolvimento de software. Busco aplicar na prática minhas habilidades em HTML, CSS, JavaScript e Python, enquanto desenvolvo novos conhecimentos em bancos de dados, back-end e outras tecnologias. <br>
-            Quero crescer profissionalmente por meio de projetos, desafios e experiências que me permitam evoluir como desenvolvedor. <br>
-        </p>
+                <p><strong>Instituição:</strong> Unicid - Cruzeiro do Sul</p>
 
-    </div>
+                <p><strong>Localização:</strong> São Paulo - SP</p>
 
+            </div>
+
+        </section>
+
+        <section class="sobre-jogador">
+
+            <h2>Sobre o jogador</h2>
+
+            <p>
+            Sou estudante de Análise e Desenvolvimento de Sistemas
+            e estou construindo minha trajetória na área de tecnologia.
+            Tenho interesse em desenvolvimento de software e venho
+            transformando meus estudos em projetos práticos.
+            </p>
+
+            <p>
+            Atualmente estou desenvolvendo meus conhecimentos em
+            HTML, CSS, JavaScript, Python, Git e GitHub, além de
+            começar meus estudos em banco de dados.
+            </p>
+
+        </section>
+
+        <section class="habilidades">
+
+        <h2>Habilidades</h2>
+
+        <div class="habilidade">
+            <span>HTML</span>
+            <div class="barra">
+                <div class="progresso html"></div>
+            </div>
+        </div>
+
+        <div class="habilidade">
+            <span>CSS</span>
+            <div class="barra">
+                <div class="progresso css"></div>
+            </div>
+        </div>
+
+        <div class="habilidade">
+            <span>JavaScript</span>
+            <div class="barra">
+                <div class="progresso javascript"></div>
+            </div>
+        </div>
+
+        <div class="habilidade">
+            <span>Python</span>
+            <div class="barra">
+                <div class="progresso python"></div>
+            </div>
+        </div>
+
+        <div class="habilidade">
+            <span>Git / GitHub</span>
+            <div class="barra">
+                <div class="progresso git"></div>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="proxima-missao">
+
+            <h2>Próxima missão</h2>
+
+            <p>
+            Continuar evoluindo como desenvolvedor,
+            aprofundar meus conhecimentos em JavaScript
+            e iniciar minha jornada no desenvolvimento backend.
+            </p>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
