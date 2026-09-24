@@ -189,10 +189,6 @@
 
  /*sobre.html*/ 
 
-/* =========================
-   FICHA DO JOGADOR
-   ========================= */
-
 .sobre-mim {
     min-height: 100vh;
     margin: 0;
@@ -203,9 +199,6 @@
 
     font-family: Arial, sans-serif;
 }
-
-
-/* Botão voltar */
 
 .botao-voltar {
     position: absolute;
@@ -236,17 +229,12 @@
 }
 
 
-/* Ficha */
-
 .ficha {
     width: 90%;
     max-width: 1000px;
 
     margin: 0 auto;
 }
-
-
-/* Título */
 
 .ficha h1 {
     text-align: center;
@@ -258,8 +246,6 @@
     letter-spacing: 4px;
 }
 
-
-/* Perfil */
 
 .perfil {
     display: flex;
@@ -278,9 +264,6 @@
 
     box-shadow: 0 8px 30px rgba(99, 116, 168, 0.12);
 }
-
-
-/* Foto */
 
 .foto-jogador {
     width: 200px;
@@ -301,9 +284,6 @@
 
     object-fit: cover;
 }
-
-
-/* Informações */
 
 .informacoes h2 {
     margin-top: 0;
@@ -436,4 +416,496 @@
 
 .proxima-missao p {
     line-height: 1.7;
+}
+
+.jornada {
+    margin-top: 25px;
+    padding: 35px;
+
+    background: #161e2d;
+    border: 1px solid #394766;
+    border-radius: 20px;
+}
+
+.jornada h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    color: #8b9cff;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.linha-jornada {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.linha-jornada::before {
+    content: "";
+
+    position: absolute;
+
+    left: 24px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #394766;
+}
+
+.etapa {
+    position: relative;
+
+    display: flex;
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.icone {
+    position: relative;
+    z-index: 2;
+
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0b0f16;
+
+    border: 2px solid #394766;
+    border-radius: 50%;
+
+    color: #6374a8;
+    font-weight: bold;
+}
+
+.conteudo-jornada {
+    flex: 1;
+
+    padding: 20px;
+
+    background: #0b0f16;
+    border: 1px solid #394766;
+    border-radius: 12px;
+}
+
+.conteudo-jornada h3 {
+    margin: 8px 0;
+
+    color: #f1f5f9;
+}
+
+.conteudo-jornada p {
+    margin: 0;
+
+    line-height: 1.6;
+    color: #f1f5f9;
+    opacity: 0.8;
+}
+
+.status {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #6374a8;
+}
+
+.etapa.concluida .icone {
+    border-color: #6374a8;
+    color: #8b9cff;
+}
+
+
+.etapa.atual .icone {
+    border-color: #8b9cff;
+    color: #8b9cff;
+
+    box-shadow: 0 0 15px rgba(99, 116, 168, 0.18);
+}
+
+.etapa.atual .conteudo-jornada {
+    border-color: #6374a8;
+}
+
+.etapa.futura .icone {
+    opacity: 0.5;
+}
+
+.etapa.futura .conteudo-jornada {
+    opacity: 0.7;
+}
+
+/*cursos.html*/
+
+/* =========================
+   INVENTÁRIO
+   ========================= */
+
+.inventario-page {
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    padding: 60px 20px;
+
+    background: #0b0f16;
+
+    color: #f1f5f9;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.inventario {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+
+/* TÍTULO */
+
+.inventario-titulo {
+
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #394766;
+
+    padding-bottom: 20px;
+
+}
+
+.inventario-titulo span {
+
+    color: #6374a8;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+}
+
+.inventario-titulo h1 {
+
+    margin: 8px 0;
+
+    color: #8b9cff;
+
+    letter-spacing: 5px;
+
+}
+
+.inventario-titulo p {
+
+    margin: 0;
+
+    color: #f1f5f9;
+
+    opacity: 0.6;
+
+}
+
+
+/* CONTEÚDO */
+
+.inventario-conteudo {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+/* SLOTS */
+
+.slots {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+}
+
+.slots h2 {
+
+    grid-column: 1 / -1;
+
+    margin: 0 0 10px;
+
+    color: #8b9cff;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ITEM */
+
+.slot {
+
+    min-height: 100px;
+
+    padding: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    background: #161e2d;
+
+    border: 1px solid #394766;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: 0.2s;
+
+}
+
+.slot strong {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #0b0f16;
+
+    border: 1px solid #394766;
+
+    border-radius: 6px;
+
+    color: #8b9cff;
+
+    font-size: 12px;
+
+}
+
+.slot span {
+
+    color: #f1f5f9;
+
+    font-size: 13px;
+
+}
+
+
+.slot:hover {
+
+    background: #1c2638;
+
+    border-color: #6374a8;
+
+}
+
+
+.slot.selecionado {
+
+    background: #1c2638;
+
+    border-color: #6374a8;
+
+    box-shadow: inset 3px 0 0 #8b9cff;
+
+}
+
+
+/* DETALHES */
+
+.detalhes-item {
+
+    padding: 30px;
+
+    background: #161e2d;
+
+    border: 1px solid #394766;
+
+    border-radius: 15px;
+
+}
+
+
+.detalhes-status {
+
+    color: #6374a8;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.item-destaque {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 25px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #0b0f16;
+
+    border: 1px solid #6374a8;
+
+    border-radius: 12px;
+
+    color: #8b9cff;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+.detalhes-item h2 {
+
+    margin: 0;
+
+    color: #f1f5f9;
+
+    font-size: 28px;
+
+}
+
+
+.instituicao {
+
+    margin-top: 8px;
+
+    color: #8b9cff;
+
+}
+
+
+.linha-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #394766;
+
+    font-size: 13px;
+
+}
+
+
+.linha-info span {
+
+    color: #6374a8;
+
+}
+
+
+.linha-info strong {
+
+    color: #f1f5f9;
+
+}
+
+
+.descricao-item {
+
+    margin: 25px 0;
+
+    line-height: 1.6;
+
+    color: #f1f5f9;
+
+    opacity: 0.7;
+
+}
+
+
+.certificado {
+
+    padding: 10px 16px;
+
+    background: #0b0f16;
+
+    border: 1px solid #394766;
+
+    border-radius: 8px;
+
+    color: #8b9cff;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.certificado:hover {
+
+    background: #1c2638;
+
+    border-color: #6374a8;
+
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 750px) {
+
+    .inventario-conteudo {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .slots {
+
+        grid-template-columns: 1fr;
+
+    }
+
 }

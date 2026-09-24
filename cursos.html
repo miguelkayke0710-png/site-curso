@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventário</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="inventario-page">
+
+    <a href="mapa.html" class="botao-voltar">← Voltar</a>
+
+
+    <main class="inventario">
+
+        <header class="inventario-titulo">
+
+            <span>PLAYER INVENTORY</span>
+
+            <h1>INVENTÁRIO</h1>
+
+            <p>
+                Itens adquiridos durante minha jornada.
+            </p>
+
+        </header>
+
+
+        <div class="inventario-conteudo">
+
+
+            <!-- SLOTS -->
+
+<section class="slots">
+
+    <h2>CURSOS</h2>
+
+    <button class="slot selecionado"
+        data-nome="Python"
+        data-instituicao="Curso em Vídeo"
+        data-categoria="Programação"
+        data-status="Concluído"
+        data-descricao="Conhecimentos adquiridos durante meus estudos de programação utilizando Python.">
+
+        <strong>PY</strong>
+        <span>Python</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="Git e GitHub"
+        data-instituicao="Curso em Vídeo"
+        data-categoria="Ferramentas"
+        data-status="Concluído"
+        data-descricao="Conhecimentos sobre controle de versão e utilização do Git e GitHub.">
+
+        <strong>GH</strong>
+        <span>Git & GitHub</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="JavaScript"
+        data-instituicao="Curso em Vídeo"
+        data-categoria="Programação"
+        data-status="Em progresso"
+        data-descricao="Estudos sobre JavaScript, lógica de programação, DOM e desenvolvimento de aplicações interativas.">
+
+        <strong>JS</strong>
+        <span>JavaScript</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="Fundamentos de TI"
+        data-instituicao="Fundação Bradesco"
+        data-categoria="Tecnologia"
+        data-status="Concluído"
+        data-descricao="Conhecimentos fundamentais sobre hardware, software e conceitos relacionados à tecnologia da informação.">
+
+        <strong>TI</strong>
+        <span>Fundamentos de TI</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="Gestão Empresarial"
+        data-instituicao="Anhanguera"
+        data-categoria="Gestão"
+        data-status="Em progresso"
+        data-descricao="Conhecimentos relacionados aos fundamentos da gestão empresarial.">
+
+        <strong>GE</strong>
+        <span>Gestão Empresarial</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="Gestão de Logística"
+        data-instituicao="Anhanguera"
+        data-categoria="Gestão"
+        data-status="Em progresso"
+        data-descricao="Conhecimentos relacionados à gestão e aos processos logísticos.">
+
+        <strong>GL</strong>
+        <span>Gestão de Logística</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="Recursos Humanos"
+        data-instituicao="Anhanguera"
+        data-categoria="Gestão"
+        data-status="Em progresso"
+        data-descricao="Conhecimentos relacionados à área de recursos humanos e gestão de pessoas.">
+
+        <strong>RH</strong>
+        <span>Recursos Humanos</span>
+
+    </button>
+
+
+    <button class="slot"
+        data-nome="Marketing Digital"
+        data-instituicao="Anhanguera"
+        data-categoria="Marketing"
+        data-status="Em progresso"
+        data-descricao="Conhecimentos relacionados aos fundamentos do marketing digital.">
+
+        <strong>MG</strong>
+        <span>Marketing Digital</span>
+
+    </button>
+
+</section>
+
+
+            <section class="detalhes-item"> <span class="detalhes-status" id="status"> ITEM DESBLOQUEADO </span> <div class="item-destaque" id="icone"> PY </div> <h2 id="nome"> Python </h2> <p class="instituicao" id="instituicao"> Curso em Vídeo </p> <div class="linha-info"> <span>Categoria</span> <strong id="categoria"> Programação </strong> </div> <div class="linha-info"> <span>Status</span> <strong id="status-curso"> Concluído </strong> </div> <p class="descricao-item" id="descricao"> Conhecimentos adquiridos durante meus estudos de programação utilizando Python. </p> <button class="certificado"> VER CERTIFICADO </button> </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/inventario.js"></script>
+</body>
+
+</html>
+
