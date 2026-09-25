@@ -1,202 +1,581 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ficha do Jogador</title>
+    <title>Miguel Kayke | Player Profile</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/sobre.css">
+
 </head>
 
 <body class="sobre-mim">
 
-    <a href="mapa.html" class="botao-voltar">← Voltar</a>
-
     <main class="ficha">
 
-        <h1>FICHA DO JOGADOR</h1>
+        <!-- TERMINAL -->
+
+        <header class="terminal">
+
+            <span>
+                user@miguel:~/portfolio$ player.exe
+            </span>
+
+            <span class="cursor">_</span>
+
+        </header>
+
+
+        <!-- TOPO -->
+
+        <section class="topo">
+
+            <div>
+
+                <p class="sistema">
+                    SYSTEM // PLAYER PROFILE
+                </p>
+
+                <h1>
+                    FICHA DO JOGADOR
+                </h1>
+
+            </div>
+
+
+            <a href="mapa.html" class="botao-voltar">
+                ← WORLD MAP
+            </a>
+
+        </section>
+
+
+        <!-- PERFIL -->
 
         <section class="perfil">
 
-            <div class="foto-jogador">
-                <img src="imagens/foto-perfil.jpeg" alt="Foto de Miguel Kayke">
+            <div class="foto-container">
+
+                <div class="foto-jogador">
+
+                    <img
+                        src="imagens/foto-perfil.jpeg"
+                        alt="Foto de Miguel Kayke"
+                    >
+
+                </div>
+
+                <span class="status-online">
+                    ● PLAYER ONLINE
+                </span>
+
             </div>
+
 
             <div class="informacoes">
 
-                <h2>MIGUEL KAYKE</h2>
+                <span class="tag">
+                    PLAYER 001
+                </span>
 
-                <p><strong>Classe:</strong> Desenvolvedor em formação</p>
+                <h2>
+                    MIGUEL KAYKE
+                </h2>
 
-                <p><strong>Nível:</strong> 18</p>
+                <p class="classe">
+                    DEVELOPER IN TRAINING
+                </p>
 
-                <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
 
-                <p><strong>Instituição:</strong> Unicid - Cruzeiro do Sul</p>
+                <div class="dados">
 
-                <p><strong>Localização:</strong> São Paulo - SP</p>
+                    <div class="dado">
+
+                        <span>LEVEL</span>
+
+                        <strong>18</strong>
+
+                    </div>
+
+
+                    <div class="dado">
+
+                        <span>CLASS</span>
+
+                        <strong>DEV</strong>
+
+                    </div>
+
+
+                    <div class="dado">
+
+                        <span>STATUS</span>
+
+                        <strong>ONLINE</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="informacao-extra">
+
+                    <p>
+                        <span>CURSO</span>
+                        Análise e Desenvolvimento de Sistemas
+                    </p>
+
+                    <p>
+                        <span>INSTITUIÇÃO</span>
+                        Unicid - Cruzeiro do Sul
+                    </p>
+
+                    <p>
+                        <span>LOCALIZAÇÃO</span>
+                        São Paulo - SP
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
-        <section class="sobre-jogador">
 
-            <h2>Sobre o jogador</h2>
+        <!-- XP -->
 
-            <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas
-            e estou construindo minha trajetória na área de tecnologia.
-            Tenho interesse em desenvolvimento de software e venho
-            transformando meus estudos em projetos práticos.
-            </p>
+        <section class="xp-player">
 
-            <p>
-            Atualmente estou desenvolvendo meus conhecimentos em
-            HTML, CSS, JavaScript, Python, Git e GitHub, além de
-            começar meus estudos em banco de dados.
-            </p>
+            <div class="xp-topo">
+
+                <span>PLAYER EXPERIENCE</span>
+
+                <span>LEVEL 18</span>
+
+            </div>
+
+
+            <div class="barra-xp">
+
+                <div class="xp-progresso"></div>
+
+            </div>
+
+
+            <div class="xp-bottom">
+
+                <span>DEVELOPER IN TRAINING</span>
+
+                <span>XP 350 / 1000</span>
+
+            </div>
 
         </section>
 
-        <section class="jornada">
 
-            <h2>JORNADA DO JOGADOR</h2>
+        <!-- SOBRE -->
+
+        <section class="painel sobre-jogador">
+
+            <div class="painel-titulo">
+
+                <span>01</span>
+
+                <h2>SOBRE O JOGADOR</h2>
+
+            </div>
+
+
+            <div class="texto">
+
+                <p>
+                    Sou estudante de Análise e Desenvolvimento de
+                    Sistemas e estou construindo minha trajetória
+                    na área de tecnologia.
+                </p>
+
+                <p>
+                    Tenho interesse em desenvolvimento de software
+                    e venho transformando meus estudos em projetos
+                    práticos.
+                </p>
+
+                <p>
+                    Atualmente estou desenvolvendo meus conhecimentos
+                    em HTML, CSS, JavaScript, Python, Git e GitHub,
+                    além de começar meus estudos em banco de dados.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- JORNADA -->
+
+        <section class="painel jornada">
+
+            <div class="painel-titulo">
+
+                <span>02</span>
+
+                <div>
+
+                    <h2>JORNADA DO JOGADOR</h2>
+
+                    <p>DEVELOPMENT QUEST</p>
+
+                </div>
+
+            </div>
+
 
             <div class="linha-jornada">
 
-                <div class="etapa concluida">
-                    <div class="icone">01</div>
 
-                    <div class="conteudo-jornada">
-                        <span class="status">DESBLOQUEADO</span>
-                        <h3>Primeiros passos</h3>
-                        <p>
-                            Início da minha jornada na tecnologia,explorando hardware, software e ferramentas digitais.
-                        </p>
+                <article class="etapa concluida">
+
+                    <div class="numero-etapa">
+                        01
                     </div>
-                </div>
-
-                <div class="etapa concluida">
-                    <div class="icone">02</div>
 
                     <div class="conteudo-jornada">
-                        <span class="status">DESBLOQUEADO</span>
-                        <h3>Desenvolvimento Web</h3>
+
+                        <span class="status">
+                            ✓ DESBLOQUEADO
+                        </span>
+
+                        <h3>
+                            Primeiros passos
+                        </h3>
+
                         <p>
-                            Aprendizado de HTML e CSS e criação dos primeiros sites e projetos.
+                            Início da minha jornada na tecnologia,
+                            explorando hardware, software e
+                            ferramentas digitais.
                         </p>
-                    </div>
-                </div>
 
-                <div class="etapa concluida">
-                    <div class="icone">03</div>
+                    </div>
+
+                </article>
+
+
+                <article class="etapa concluida">
+
+                    <div class="numero-etapa">
+                        02
+                    </div>
 
                     <div class="conteudo-jornada">
-                        <span class="status">DESBLOQUEADO</span>
-                        <h3>Python</h3>
+
+                        <span class="status">
+                            ✓ DESBLOQUEADO
+                        </span>
+
+                        <h3>
+                            Desenvolvimento Web
+                        </h3>
+
                         <p>
-                            Primeiros contatos com programação,lógica e desenvolvimento de pequenos projetos.
+                            Aprendizado de HTML e CSS e criação
+                            dos primeiros sites e projetos.
                         </p>
-                    </div>
-                </div>
 
-                <div class="etapa atual">
-                    <div class="icone">04</div>
+                    </div>
+
+                </article>
+
+
+                <article class="etapa concluida">
+
+                    <div class="numero-etapa">
+                        03
+                    </div>
 
                     <div class="conteudo-jornada">
-                        <span class="status">EM PROGRESSO</span>
-                        <h3>JavaScript</h3>
+
+                        <span class="status">
+                            ✓ DESBLOQUEADO
+                        </span>
+
+                        <h3>
+                            Python
+                        </h3>
+
                         <p>
-                            Atualmente aprofundando meus conhecimento em JavaScript, DOM e criação de aplicações interativas.
+                            Primeiros contatos com programação,
+                            lógica e desenvolvimento de pequenos
+                            projetos.
                         </p>
-                    </div>
-                </div>
 
-                <div class="etapa atual">
-                    <div class="icone">05</div>
+                    </div>
+
+                </article>
+
+
+                <article class="etapa atual">
+
+                    <div class="numero-etapa">
+                        04
+                    </div>
 
                     <div class="conteudo-jornada">
-                        <span class="status">EM PROGRESSO</span>
-                        <h3>Banco de Dados</h3>
+
+                        <span class="status">
+                            ▶ EM PROGRESSO
+                        </span>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
                         <p>
-                            Começando a desenvolver conhecimentos embanco de dados e integração com aplicações.
+                            Atualmente aprofundando meus conhecimentos
+                            em JavaScript, DOM e criação de aplicações
+                            interativas.
                         </p>
-                    </div>
-                </div>
 
-                <div class="etapa futura">
-                    <div class="icone">06</div>
+                    </div>
+
+                </article>
+
+
+                <article class="etapa atual">
+
+                    <div class="numero-etapa">
+                        05
+                    </div>
 
                     <div class="conteudo-jornada">
-                        <span class="status">PRÓXIMA MISSÃO</span>
-                        <h3>Backend</h3>
+
+                        <span class="status">
+                            ▶ EM PROGRESSO
+                        </span>
+
+                        <h3>
+                            Banco de Dados
+                        </h3>
+
+                        <p>
+                            Começando a desenvolver conhecimentos
+                            em banco de dados e integração com
+                            aplicações.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="etapa futura">
+
+                    <div class="numero-etapa">
+                        06
+                    </div>
+
+                    <div class="conteudo-jornada">
+
+                        <span class="status">
+                            🔒 PRÓXIMA MISSÃO
+                        </span>
+
+                        <h3>
+                            Backend
+                        </h3>
+
                         <p>
                             Próximo objetivo da jornada:
-                            aprofundar conhecimentos em desenvolvimento backend e construir aplicações mais completas.
+                            aprofundar conhecimentos em desenvolvimento
+                            backend e construir aplicações mais completas.
                         </p>
+
                     </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+
+        <section class="painel habilidades">
+
+            <div class="painel-titulo">
+
+                <span>03</span>
+
+                <div>
+
+                    <h2>ATRIBUTOS</h2>
+
+                    <p>PLAYER SKILLS</p>
+
                 </div>
 
             </div>
 
+
+            <div class="lista-habilidades">
+
+
+                <div class="habilidade">
+
+                    <div class="habilidade-topo">
+
+                        <span>HTML</span>
+
+                        <span>85%</span>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="progresso html"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habilidade">
+
+                    <div class="habilidade-topo">
+
+                        <span>CSS</span>
+
+                        <span>80%</span>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="progresso css"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habilidade">
+
+                    <div class="habilidade-topo">
+
+                        <span>JAVASCRIPT</span>
+
+                        <span>60%</span>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="progresso javascript"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habilidade">
+
+                    <div class="habilidade-topo">
+
+                        <span>PYTHON</span>
+
+                        <span>65%</span>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="progresso python"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habilidade">
+
+                    <div class="habilidade-topo">
+
+                        <span>GIT / GITHUB</span>
+
+                        <span>70%</span>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="progresso git"></div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
         </section>
 
 
-        <section class="habilidades">
+        <!-- PRÓXIMA MISSÃO -->
 
-        <h2>Habilidades</h2>
+        <section class="missao">
 
-        <div class="habilidade">
-            <span>HTML</span>
-            <div class="barra">
-                <div class="progresso html"></div>
+            <div class="missao-numero">
+                04
             </div>
-        </div>
 
-        <div class="habilidade">
-            <span>CSS</span>
-            <div class="barra">
-                <div class="progresso css"></div>
-            </div>
-        </div>
 
-        <div class="habilidade">
-            <span>JavaScript</span>
-            <div class="barra">
-                <div class="progresso javascript"></div>
-            </div>
-        </div>
+            <div class="missao-conteudo">
 
-        <div class="habilidade">
-            <span>Python</span>
-            <div class="barra">
-                <div class="progresso python"></div>
-            </div>
-        </div>
+                <span>
+                    NEXT QUEST
+                </span>
 
-        <div class="habilidade">
-            <span>Git / GitHub</span>
-            <div class="barra">
-                <div class="progresso git"></div>
+                <h2>
+                    DESENVOLVIMENTO BACKEND
+                </h2>
+
+                <p>
+                    Continuar evoluindo como desenvolvedor,
+                    aprofundar meus conhecimentos em JavaScript
+                    e iniciar minha jornada no desenvolvimento
+                    backend.
+                </p>
+
             </div>
-        </div>
+
+
+            <div class="missao-status">
+                LOCKED
+            </div>
 
         </section>
 
-        <section class="proxima-missao">
 
-            <h2>Próxima missão</h2>
+        <!-- FOOTER -->
 
-            <p>
-            Continuar evoluindo como desenvolvedor,
-            aprofundar meus conhecimentos em JavaScript
-            e iniciar minha jornada no desenvolvimento backend.
-            </p>
+        <footer>
 
-        </section>
+            <span>
+                MIGUEL KAYKE // PLAYER PROFILE
+            </span>
+
+            <span>
+                PORTFOLIO v1.0
+            </span>
+
+        </footer>
+
 
     </main>
 

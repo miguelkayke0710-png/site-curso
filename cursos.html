@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,154 +8,354 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Inventário</title>
+    <title>Miguel Kayke | Inventory</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/cursos.css">
 
 </head>
 
 <body class="inventario-page">
 
-    <a href="mapa.html" class="botao-voltar">← Voltar</a>
-
-
     <main class="inventario">
 
-        <header class="inventario-titulo">
+        <header class="terminal">
 
-            <span>PLAYER INVENTORY</span>
+            <span>
+                user@miguel:~/portfolio$ inventory.exe
+            </span>
 
-            <h1>INVENTÁRIO</h1>
-
-            <p>
-                Itens adquiridos durante minha jornada.
-            </p>
+            <span class="cursor">_</span>
 
         </header>
+
+
+        <section class="inventario-titulo">
+
+            <div>
+
+                <span class="sistema">
+                    SYSTEM // PLAYER INVENTORY
+                </span>
+
+                <h1>INVENTÁRIO</h1>
+
+                <p>
+                    Itens adquiridos durante minha jornada.
+                </p>
+
+            </div>
+
+
+            <a href="mapa.html" class="botao-voltar">
+                ← WORLD MAP
+            </a>
+
+        </section>
 
 
         <div class="inventario-conteudo">
 
 
-            <!-- SLOTS -->
+            <section class="slots">
 
-<section class="slots">
+                <div class="secao-titulo">
 
-    <h2>CURSOS</h2>
+                    <span>01</span>
 
-    <button class="slot selecionado"
-        data-nome="Python"
-        data-instituicao="Curso em Vídeo"
-        data-categoria="Programação"
-        data-status="Concluído"
-        data-descricao="Conhecimentos adquiridos durante meus estudos de programação utilizando Python.">
+                    <div>
 
-        <strong>PY</strong>
-        <span>Python</span>
+                        <h2>CURSOS</h2>
 
-    </button>
+                        <p>PLAYER ACHIEVEMENTS</p>
+
+                    </div>
+
+                </div>
 
 
-    <button class="slot"
-        data-nome="Git e GitHub"
-        data-instituicao="Curso em Vídeo"
-        data-categoria="Ferramentas"
-        data-status="Concluído"
-        data-descricao="Conhecimentos sobre controle de versão e utilização do Git e GitHub.">
+                <button
+                    class="slot selecionado"
+                    data-nome="Python"
+                    data-instituicao="Curso em Vídeo"
+                    data-categoria="Programação"
+                    data-status="Concluído"
+                    data-descricao="Conhecimentos adquiridos durante meus estudos de programação utilizando Python."
+                >
 
-        <strong>GH</strong>
-        <span>Git & GitHub</span>
+                    <strong>PY</strong>
 
-    </button>
+                    <div>
 
+                        <span>Python</span>
+                        <small>PROGRAMMING</small>
 
-    <button class="slot"
-        data-nome="JavaScript"
-        data-instituicao="Curso em Vídeo"
-        data-categoria="Programação"
-        data-status="Em progresso"
-        data-descricao="Estudos sobre JavaScript, lógica de programação, DOM e desenvolvimento de aplicações interativas.">
+                    </div>
 
-        <strong>JS</strong>
-        <span>JavaScript</span>
+                    <b>✓</b>
 
-    </button>
+                </button>
 
 
-    <button class="slot"
-        data-nome="Fundamentos de TI"
-        data-instituicao="Fundação Bradesco"
-        data-categoria="Tecnologia"
-        data-status="Concluído"
-        data-descricao="Conhecimentos fundamentais sobre hardware, software e conceitos relacionados à tecnologia da informação.">
+                <button
+                    class="slot"
+                    data-nome="Git e GitHub"
+                    data-instituicao="Curso em Vídeo"
+                    data-categoria="Ferramentas"
+                    data-status="Concluído"
+                    data-descricao="Conhecimentos sobre controle de versão e utilização do Git e GitHub."
+                >
 
-        <strong>TI</strong>
-        <span>Fundamentos de TI</span>
+                    <strong>GH</strong>
 
-    </button>
+                    <div>
 
+                        <span>Git & GitHub</span>
+                        <small>TOOLS</small>
 
-    <button class="slot"
-        data-nome="Gestão Empresarial"
-        data-instituicao="Anhanguera"
-        data-categoria="Gestão"
-        data-status="Em progresso"
-        data-descricao="Conhecimentos relacionados aos fundamentos da gestão empresarial.">
+                    </div>
 
-        <strong>GE</strong>
-        <span>Gestão Empresarial</span>
+                    <b>✓</b>
 
-    </button>
+                </button>
 
 
-    <button class="slot"
-        data-nome="Gestão de Logística"
-        data-instituicao="Anhanguera"
-        data-categoria="Gestão"
-        data-status="Em progresso"
-        data-descricao="Conhecimentos relacionados à gestão e aos processos logísticos.">
+                <button
+                    class="slot"
+                    data-nome="JavaScript"
+                    data-instituicao="Curso em Vídeo"
+                    data-categoria="Programação"
+                    data-status="Em progresso"
+                    data-descricao="Estudos sobre JavaScript, lógica de programação, DOM e desenvolvimento de aplicações interativas."
+                >
 
-        <strong>GL</strong>
-        <span>Gestão de Logística</span>
+                    <strong>JS</strong>
 
-    </button>
+                    <div>
 
+                        <span>JavaScript</span>
+                        <small>PROGRAMMING</small>
 
-    <button class="slot"
-        data-nome="Recursos Humanos"
-        data-instituicao="Anhanguera"
-        data-categoria="Gestão"
-        data-status="Em progresso"
-        data-descricao="Conhecimentos relacionados à área de recursos humanos e gestão de pessoas.">
+                    </div>
 
-        <strong>RH</strong>
-        <span>Recursos Humanos</span>
+                    <b>▶</b>
 
-    </button>
+                </button>
 
 
-    <button class="slot"
-        data-nome="Marketing Digital"
-        data-instituicao="Anhanguera"
-        data-categoria="Marketing"
-        data-status="Em progresso"
-        data-descricao="Conhecimentos relacionados aos fundamentos do marketing digital.">
+                <button
+                    class="slot"
+                    data-nome="Fundamentos de TI"
+                    data-instituicao="Fundação Bradesco"
+                    data-categoria="Tecnologia"
+                    data-status="Concluído"
+                    data-descricao="Conhecimentos fundamentais sobre hardware, software e conceitos relacionados à tecnologia da informação."
+                >
 
-        <strong>MG</strong>
-        <span>Marketing Digital</span>
+                    <strong>TI</strong>
 
-    </button>
+                    <div>
 
-</section>
+                        <span>Fundamentos de TI</span>
+                        <small>TECHNOLOGY</small>
+
+                    </div>
+
+                    <b>✓</b>
+
+                </button>
 
 
-            <section class="detalhes-item"> <span class="detalhes-status" id="status"> ITEM DESBLOQUEADO </span> <div class="item-destaque" id="icone"> PY </div> <h2 id="nome"> Python </h2> <p class="instituicao" id="instituicao"> Curso em Vídeo </p> <div class="linha-info"> <span>Categoria</span> <strong id="categoria"> Programação </strong> </div> <div class="linha-info"> <span>Status</span> <strong id="status-curso"> Concluído </strong> </div> <p class="descricao-item" id="descricao"> Conhecimentos adquiridos durante meus estudos de programação utilizando Python. </p> <button class="certificado"> VER CERTIFICADO </button> </section>
+                <button
+                    class="slot"
+                    data-nome="Gestão Empresarial"
+                    data-instituicao="Anhanguera"
+                    data-categoria="Gestão"
+                    data-status="Em progresso"
+                    data-descricao="Conhecimentos relacionados aos fundamentos da gestão empresarial."
+                >
+
+                    <strong>GE</strong>
+
+                    <div>
+
+                        <span>Gestão Empresarial</span>
+                        <small>MANAGEMENT</small>
+
+                    </div>
+
+                    <b>▶</b>
+
+                </button>
+
+
+                <button
+                    class="slot"
+                    data-nome="Gestão de Logística"
+                    data-instituicao="Anhanguera"
+                    data-categoria="Gestão"
+                    data-status="Em progresso"
+                    data-descricao="Conhecimentos relacionados à gestão e aos processos logísticos."
+                >
+
+                    <strong>GL</strong>
+
+                    <div>
+
+                        <span>Gestão de Logística</span>
+                        <small>MANAGEMENT</small>
+
+                    </div>
+
+                    <b>▶</b>
+
+                </button>
+
+
+                <button
+                    class="slot"
+                    data-nome="Recursos Humanos"
+                    data-instituicao="Anhanguera"
+                    data-categoria="Gestão"
+                    data-status="Em progresso"
+                    data-descricao="Conhecimentos relacionados à área de recursos humanos e gestão de pessoas."
+                >
+
+                    <strong>RH</strong>
+
+                    <div>
+
+                        <span>Recursos Humanos</span>
+                        <small>MANAGEMENT</small>
+
+                    </div>
+
+                    <b>▶</b>
+
+                </button>
+
+
+                <button
+                    class="slot"
+                    data-nome="Marketing Digital"
+                    data-instituicao="Anhanguera"
+                    data-categoria="Marketing"
+                    data-status="Em progresso"
+                    data-descricao="Conhecimentos relacionados aos fundamentos do marketing digital."
+                >
+
+                    <strong>MG</strong>
+
+                    <div>
+
+                        <span>Marketing Digital</span>
+                        <small>MARKETING</small>
+
+                    </div>
+
+                    <b>▶</b>
+
+                </button>
+
+            </section>
+
+
+            <section class="detalhes-item">
+
+                <span
+                    class="detalhes-status"
+                    id="status"
+                >
+                    ✓ ITEM DESBLOQUEADO
+                </span>
+
+
+                <div
+                    class="item-destaque"
+                    id="icone"
+                >
+                    PY
+                </div>
+
+
+                <h2 id="nome">
+                    Python
+                </h2>
+
+
+                <p
+                    class="instituicao"
+                    id="instituicao"
+                >
+                    Curso em Vídeo
+                </p>
+
+
+                <div class="linha-info">
+
+                    <span>Categoria</span>
+
+                    <strong id="categoria">
+                        Programação
+                    </strong>
+
+                </div>
+
+
+                <div class="linha-info">
+
+                    <span>Status</span>
+
+                    <strong id="status-curso">
+                        Concluído
+                    </strong>
+
+                </div>
+
+
+                <div class="linha-info">
+
+                    <span>Tipo</span>
+
+                    <strong>CURSO</strong>
+
+                </div>
+
+
+                <p
+                    class="descricao-item"
+                    id="descricao"
+                >
+                    Conhecimentos adquiridos durante meus estudos
+                    de programação utilizando Python.
+                </p>
+
+
+                <button class="certificado">
+                    VER CERTIFICADO →
+                </button>
+
+            </section>
 
         </div>
 
+
+        <footer>
+
+            <span>
+                MIGUEL KAYKE // PLAYER INVENTORY
+            </span>
+
+            <span>
+                08 ITEMS
+            </span>
+
+        </footer>
+
     </main>
 
+
     <script src="js/inventario.js"></script>
+
 </body>
 
 </html>

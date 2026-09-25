@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+
+/* =========================
+   FICHA
+========================= */
+
+.ficha {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .45);
+
+    position: relative;
+}
+
+
+.ficha::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 20px rgba(56, 189, 248, .8);
+}
+
+
+/* =========================
+   TERMINAL
+========================= */
+
+.terminal {
+    padding: 18px 30px;
+
+    background: #0f172a;
+
+    border-bottom: 1px solid #334155;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+.cursor {
+    color: #38bdf8;
+
+    animation: piscar 1s infinite;
+}
+
+
+@keyframes piscar {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 35px 40px 25px;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.sistema {
+    color: #64748b;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.topo h1 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 30px;
+
+    letter-spacing: 4px;
+}
+
+
+.botao-voltar {
+    color: #38bdf8;
+
+    border: 1px solid #334155;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: .3s;
+}
+
+
+.botao-voltar:hover {
+    border-color: #38bdf8;
+
+    background: #1e293b;
+
+    box-shadow:
+        0 0 15px rgba(56, 189, 248, .15);
+}
+
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil {
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto-container {
+    text-align: center;
+}
+
+
+.foto-jogador {
+    width: 200px;
+    height: 200px;
+
+    margin: auto;
+
+    padding: 5px;
+
+    border: 1px solid #38bdf8;
+
+    border-radius: 16px;
+
+    background: #0f172a;
+
+    box-shadow:
+        0 0 30px rgba(56, 189, 248, .12);
+}
+
+
+.foto-jogador img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+.status-online {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #38bdf8;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.tag {
+    display: inline-block;
+
+    color: #38bdf8;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    border: 1px solid #334155;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    margin-bottom: 12px;
+}
+
+
+.informacoes h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 28px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+
+.classe {
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   DADOS
+========================= */
+
+.dados {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.dado {
+    padding: 14px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 8px;
+}
+
+
+.dado span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+
+.dado strong {
+    color: #7dd3fc;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   INFORMAÇÕES EXTRAS
+========================= */
+
+.informacao-extra {
+    display: grid;
+
+    gap: 8px;
+}
+
+
+.informacao-extra p {
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.informacao-extra span {
+    color: #64748b;
+
+    margin-right: 8px;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   XP
+========================= */
+
+.xp-player {
+    padding: 25px 40px;
+
+    background: #0f172a;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.xp-topo,
+.xp-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 10px;
+
+    color: #64748b;
+}
+
+
+.xp-topo span:last-child,
+.xp-bottom span:last-child {
+    color: #38bdf8;
+}
+
+
+.barra-xp {
+    height: 8px;
+
+    background: #1e293b;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin: 10px 0;
+}
+
+
+.xp-progresso {
+    width: 35%;
+
+    height: 100%;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 12px rgba(56, 189, 248, .7);
+}
+
+
+/* =========================
+   PAINÉIS
+========================= */
+
+.painel {
+    padding: 40px;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.painel-titulo {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.painel-titulo > span {
+    color: #38bdf8;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 12px;
+
+    padding-top: 3px;
+}
+
+
+.painel-titulo h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.painel-titulo p {
+    color: #64748b;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.texto {
+    max-width: 850px;
+
+    display: grid;
+
+    gap: 15px;
+}
+
+
+.texto p {
+    color: #94a3b8;
+
+    line-height: 1.8;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   JORNADA
+========================= */
+
+.linha-jornada {
+    position: relative;
+
+    display: grid;
+
+    gap: 15px;
+}
+
+
+.linha-jornada::before {
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 20px;
+    bottom: 20px;
+
+    width: 2px;
+
+    background: #334155;
+}
+
+
+.etapa {
+    display: grid;
+
+    grid-template-columns: 38px 1fr;
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.numero-etapa {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #334155;
+
+    border-radius: 50%;
+
+    background: #111827;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+.conteudo-jornada {
+    padding: 18px;
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+
+.conteudo-jornada:hover {
+    border-color: #38bdf8;
+
+    transform: translateX(5px);
+}
+
+
+.status {
+    color: #64748b;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+.etapa.concluida .status {
+    color: #38bdf8;
+}
+
+
+.etapa.atual .status {
+    color: #7dd3fc;
+}
+
+
+.etapa.futura {
+    opacity: .65;
+}
+
+
+.conteudo-jornada h3 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 14px;
+
+    margin: 7px 0;
+}
+
+
+.conteudo-jornada p {
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.lista-habilidades {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 35px;
+}
+
+
+.habilidade {
+    display: grid;
+
+    gap: 8px;
+}
+
+
+.habilidade-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+.habilidade-topo span:last-child {
+    color: #38bdf8;
+}
+
+
+.barra {
+    width: 100%;
+
+    height: 7px;
+
+    background: #0f172a;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progresso {
+    height: 100%;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, .5);
+}
+
+
+.progresso.html {
+    width: 85%;
+}
+
+
+.progresso.css {
+    width: 80%;
+}
+
+
+.progresso.javascript {
+    width: 60%;
+}
+
+
+.progresso.python {
+    width: 65%;
+}
+
+
+.progresso.git {
+    width: 70%;
+}
+
+
+/* =========================
+   PRÓXIMA MISSÃO
+========================= */
+
+.missao {
+    display: grid;
+
+    grid-template-columns: 60px 1fr auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 40px;
+
+    padding: 25px;
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.missao::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: #38bdf8;
+}
+
+
+.missao-numero {
+    color: #38bdf8;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 20px;
+}
+
+
+.missao-conteudo > span {
+    color: #64748b;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+.missao-conteudo h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 16px;
+
+    margin: 7px 0;
+}
+
+
+.missao-conteudo p {
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    max-width: 650px;
+}
+
+
+.missao-status {
+    color: #64748b;
+
+    border: 1px solid #334155;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 18px 30px;
+
+    background: #0f172a;
+
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .topo {
+        padding: 30px 20px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .topo h1 {
+        font-size: 23px;
+    }
+
+
+    .botao-voltar {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .perfil {
+        grid-template-columns: 1fr;
+
+        padding: 30px 20px;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+
+    .informacao-extra {
+        text-align: left;
+    }
+
+
+    .dados {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .painel {
+        padding: 30px 20px;
+    }
+
+
+    .lista-habilidades {
+        grid-template-columns: 1fr;
+    }
+
+
+    .missao {
+        grid-template-columns: 45px 1fr;
+
+        margin: 25px 20px;
+    }
+
+
+    .missao-status {
+        grid-column: 2;
+
+        width: fit-content;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .terminal {
+        padding: 15px;
+
+        font-size: 11px;
+    }
+
+
+    .topo h1 {
+        font-size: 20px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .foto-jogador {
+        width: 160px;
+
+        height: 160px;
+    }
+
+
+    .informacoes h2 {
+        font-size: 22px;
+    }
+
+
+    .dados {
+        grid-template-columns: 1fr;
+    }
+
+
+    .xp-player {
+        padding: 20px;
+    }
+
+
+    .painel-titulo h2 {
+        font-size: 15px;
+    }
+
+
+    .missao {
+        margin: 20px;
+
+        padding: 20px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+}

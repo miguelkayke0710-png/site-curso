@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+.mapa-html {
+    min-height: 100vh;
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: 'Share Tech Mono', monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa {
+    width: 100%;
+    max-width: 1100px;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+
+    position: relative;
+}
+
+
+/* linha superior */
+
+.mapa::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 20px rgba(56, 189, 248, 0.7);
+}
+
+
+/* =========================
+   TERMINAL
+========================= */
+
+.terminal {
+    padding: 18px 30px;
+
+    background: #0f172a;
+
+    border-bottom: 1px solid #334155;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+.cursor {
+    color: #38bdf8;
+
+    animation: piscar 1s infinite;
+}
+
+
+@keyframes piscar {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    padding: 40px 40px 30px;
+
+    text-align: center;
+}
+
+
+.cabecalho p {
+    color: #64748b;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+.cabecalho h1 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 32px;
+
+    letter-spacing: 5px;
+
+    color: #f8fafc;
+
+    margin-bottom: 10px;
+}
+
+
+.cabecalho span {
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 30px;
+
+    padding: 10px 40px 40px;
+}
+
+
+/* =========================
+   PLAYER
+========================= */
+
+.player {
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    height: fit-content;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.player::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #38bdf8;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar {
+    width: 130px;
+    height: 130px;
+
+    margin: 5px auto 20px;
+
+    border: 2px solid #38bdf8;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.2);
+}
+
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   PLAYER INFO
+========================= */
+
+.player h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.classe {
+    color: #38bdf8;
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.player-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.player-info div {
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+
+.player-info span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
+}
+
+
+.player-info strong {
+    color: #7dd3fc;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   XP
+========================= */
+
+.xp {
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+
+.xp-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+.xp-info span:last-child {
+    color: #38bdf8;
+}
+
+
+.barra {
+    height: 7px;
+
+    background: #0f172a;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progresso {
+    width: 35%;
+
+    height: 100%;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.7);
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    color: #38bdf8;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   ÁREAS
+========================= */
+
+.areas {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.areas-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   CAMINHO DO MAPA
+========================= */
+
+.mapa-caminho {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+
+    padding: 15px 0;
+}
+
+
+/* LINHA CENTRAL */
+
+.mapa-caminho::before {
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    bottom: 20px;
+
+    left: 50%;
+
+    width: 2px;
+
+    transform: translateX(-50%);
+
+    background: linear-gradient(
+        to bottom,
+        #38bdf8,
+        #334155,
+        #38bdf8,
+        #334155
+    );
+
+    background-size: 100% 200%;
+
+    animation: energia 4s linear infinite;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.2);
+
+    z-index: 0;
+}
+
+
+@keyframes energia {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+
+}
+
+
+/* =========================
+   ÁREA
+========================= */
+
+.area {
+    width: 45%;
+
+    display: grid;
+
+    grid-template-columns: 55px 1fr auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px 20px;
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    position: relative;
+
+    overflow: visible;
+
+    z-index: 2;
+}
+
+
+/* LADO ESQUERDO */
+
+.area.esquerda {
+    align-self: flex-start;
+}
+
+
+/* LADO DIREITO */
+
+.area.direita {
+    align-self: flex-end;
+}
+
+
+/* =========================
+   BARRA DE HOVER DO CARD
+========================= */
+
+.area .hover-bar {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 2px;
+    height: 100%;
+
+    background: #38bdf8;
+
+    transform: scaleY(0);
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   LINHA CARD → CENTRO
+========================= */
+
+.area.esquerda::before,
+.area.direita::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    width: 11%;
+
+    height: 2px;
+
+    background: #334155;
+
+    transform: translateY(-50%);
+
+    transition: 0.3s;
+
+    z-index: -1;
+}
+
+
+.area.esquerda::before {
+    right: -11%;
+}
+
+
+.area.direita::before {
+    left: -11%;
+}
+
+
+/* =========================
+   PONTO DE CONEXÃO
+========================= */
+
+.area::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    width: 12px;
+
+    height: 12px;
+
+    background: #0f172a;
+
+    border: 2px solid #38bdf8;
+
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+
+    box-shadow:
+        0 0 12px rgba(56, 189, 248, 0.7);
+
+    z-index: 3;
+
+}
+
+
+.area.esquerda::after {
+    right: -11%;
+}
+
+
+.area.direita::after {
+    left: -11%;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.area:hover {
+
+    border-color: #38bdf8;
+
+    background: #243447;
+
+    transform: translateX(7px);
+
+    box-shadow:
+        0 5px 20px rgba(56, 189, 248, 0.08);
+}
+
+
+.area:hover::before {
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+
+.area:hover::after {
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 15px rgba(56, 189, 248, 0.9),
+        0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+
+/* =========================
+   NÚMERO
+========================= */
+
+.numero {
+    color: #38bdf8;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ÁREA INFO
+========================= */
+
+.area-info h3 {
+
+    color: #f8fafc;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+
+.area-info p {
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   ENTER
+========================= */
+
+.entrar {
+
+    color: #38bdf8;
+
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+
+.area:hover .entrar {
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 18px 30px;
+
+    background: #0f172a;
+
+    border-top: 1px solid #334155;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    .mapa-html {
+        padding: 10px;
+    }
+
+
+    .conteudo {
+
+        grid-template-columns: 1fr;
+
+        padding: 10px 20px 30px;
+    }
+
+
+    .cabecalho {
+
+        padding: 30px 20px 20px;
+    }
+
+
+    .cabecalho h1 {
+
+        font-size: 25px;
+    }
+
+
+    .player {
+
+        max-width: 400px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+
+    /* remove linha central no celular */
+
+    .mapa-caminho::before {
+        display: none;
+    }
+
+
+    /* cards ocupam toda a largura */
+
+    .area {
+
+        width: 100%;
+
+        align-self: center !important;
+    }
+
+
+    /* remove conexões */
+
+    .area.esquerda::before,
+    .area.direita::before,
+
+    .area.esquerda::after,
+    .area.direita::after {
+
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .terminal {
+
+        padding: 15px;
+    }
+
+
+    .area {
+
+        grid-template-columns: 40px 1fr;
+
+        gap: 12px;
+
+        padding: 16px;
+    }
+
+
+    .entrar {
+
+        display: none;
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+}

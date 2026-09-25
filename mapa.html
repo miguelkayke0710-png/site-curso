@@ -1,63 +1,347 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Seleção de Personagem</title>
+    <title>Miguel Kayke | World Map</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/mapa.css">
+
 </head>
 
 <body class="mapa-html">
 
-    <main class="selecao">
+    <main class="mapa">
 
-        <h1>SELECIONE UMA ÁREA</h1>
 
-        <div class="personagem">
+        <!-- TERMINAL -->
 
-            <div class="personagem-info">
+        <header class="terminal">
+
+            <span>
+                user@miguel:~/portfolio$ map.exe
+            </span>
+
+            <span class="cursor">_</span>
+
+        </header>
+
+
+        <!-- CABEÇALHO -->
+
+        <section class="cabecalho">
+
+            <p>
+                SYSTEM // WORLD MAP
+            </p>
+
+            <h1>
+                MIGUEL KAYKE
+            </h1>
+
+            <span>
+                SELECT YOUR DESTINATION
+            </span>
+
+        </section>
+
+
+        <!-- CONTEÚDO -->
+
+        <section class="conteudo">
+
+
+            <!-- PLAYER -->
+
+            <aside class="player">
+
                 <div class="avatar">
-                    <img src="imagens/foto-perfil.jpeg" alt="Foto de Miguel Kayke">
+
+                    <img
+                        src="imagens/foto-perfil.jpeg"
+                        alt="Foto de Miguel Kayke"
+                    >
+
                 </div>
 
-                <h2>MIGUEL KAYKE</h2>
 
-                <p>Estudante de ADS</p>
-                <span>Desenvolvedor em formação</span>
-            
-            </div>
+                <h2>
+                    MIGUEL KAYKE
+                </h2>
 
-            <div class="opcoes">
+                <p class="classe">
+                    DEVELOPER IN TRAINING
+                </p>
 
-        <a href="sobre-mim.html" class="opcao" data-descricao="Conheça minha história, formação e quem eu sou.">
-            <strong>01</strong>
-            <span>Sobre mim</span>
-        </a>
 
-        <a href="cursos.html" class="opcao" data-descricao="Veja meus cursos, certificados e conquistas.">
-            <strong>02</strong>
-            <span>Cursos</span>
-        </a>
+                <!-- INFORMAÇÕES DO PLAYER -->
 
-        <a href="projetos.html" class="opcao" data-descricao="Confira os projetos que estou desenvolvendo.">
-            <strong>03</strong>
-            <span>Projetos</span>
-        </a>
+                <div class="player-info">
 
-        <a href="experiencia.html" class="opcao" data-descricao="Conheça minhas experiências profissionais.">
-            <strong>04</strong>
-            <span>Experiência</span>
-        </a>
+                    <div>
 
-        <a href="contatos.html" class="opcao" data-descricao="Entre em contato comigo.">
-            <strong>05</strong>
-            <span>Contatos</span>
-        </a>
+                        <span>
+                            LEVEL
+                        </span>
 
-        </div>
+                        <strong>
+                            01
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            CLASS
+                        </span>
+
+                        <strong>
+                            DEV
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- XP -->
+
+                <div class="xp">
+
+                    <div class="xp-info">
+
+                        <span>
+                            EXPERIENCE
+                        </span>
+
+                        <span>
+                            350 XP
+                        </span>
+
+                    </div>
+
+
+                    <div class="barra">
+
+                        <div class="progresso"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATUS -->
+
+                <p class="status">
+                    ● PLAYER ONLINE
+                </p>
+
+            </aside>
+
+
+            <!-- ÁREAS DO MAPA -->
+
+            <section class="areas">
+
+                <div class="areas-topo">
+
+                    <span>
+                        AVAILABLE AREAS
+                    </span>
+
+                    <span>
+                        05 LOCATIONS
+                    </span>
+
+                </div>
+
+
+                <!-- CAMINHO -->
+
+                <div class="mapa-caminho">
+
+
+                    <!-- FASE 01 -->
+
+                    <a
+                        href="sobre-mim.html"
+                        class="area esquerda"
+                    >
+
+                        <div class="numero">
+                            01
+                        </div>
+
+                        <div class="area-info">
+
+                            <h3>
+                                SOBRE MIM
+                            </h3>
+
+                            <p>
+                                PLAYER PROFILE
+                            </p>
+
+                        </div>
+
+                        <span class="entrar">
+                            ENTER →
+                        </span>
+
+                    </a>
+
+
+                    <!-- FASE 02 -->
+
+                    <a
+                        href="cursos.html"
+                        class="area direita"
+                    >
+
+                        <div class="numero">
+                            02
+                        </div>
+
+                        <div class="area-info">
+
+                            <h3>
+                                CURSOS
+                            </h3>
+
+                            <p>
+                                ACHIEVEMENTS
+                            </p>
+
+                        </div>
+
+                        <span class="entrar">
+                            ENTER →
+                        </span>
+
+                    </a>
+
+
+                    <!-- FASE 03 -->
+
+                    <a
+                        href="projetos.html"
+                        class="area esquerda"
+                    >
+
+                        <div class="numero">
+                            03
+                        </div>
+
+                        <div class="area-info">
+
+                            <h3>
+                                PROJETOS
+                            </h3>
+
+                            <p>
+                                MISSIONS
+                            </p>
+
+                        </div>
+
+                        <span class="entrar">
+                            ENTER →
+                        </span>
+
+                    </a>
+
+
+                    <!-- FASE 04 -->
+
+                    <a
+                        href="experiencia.html"
+                        class="area direita"
+                    >
+
+                        <div class="numero">
+                            04
+                        </div>
+
+                        <div class="area-info">
+
+                            <h3>
+                                EXPERIÊNCIA
+                            </h3>
+
+                            <p>
+                                CAREER
+                            </p>
+
+                        </div>
+
+                        <span class="entrar">
+                            ENTER →
+                        </span>
+
+                    </a>
+
+
+                    <!-- FASE 05 -->
+
+                    <a
+                        href="contatos.html"
+                        class="area esquerda"
+                    >
+
+                        <div class="numero">
+                            05
+                        </div>
+
+                        <div class="area-info">
+
+                            <h3>
+                                CONTATOS
+                            </h3>
+
+                            <p>
+                                COMMUNICATION
+                            </p>
+
+                        </div>
+
+                        <span class="entrar">
+                            ENTER →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <span>
+                PORTFOLIO WORLD v1.0
+            </span>
+
+            <span>
+                SELECT AN AREA TO CONTINUE
+            </span>
+
+        </footer>
+
 
     </main>
+
 </body>
+
 </html>

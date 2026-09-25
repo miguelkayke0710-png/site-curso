@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TELA
+========================= */
+
+body.index {
+
+    min-height: 100vh;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   EFEITO DE FUNDO
+========================= */
+
+body.index::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(56, 189, 248, 0.03) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(56, 189, 248, 0.03) 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   TELA PRINCIPAL
+========================= */
+
+.tela-inicial {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    min-height: 600px;
+
+    border: 1px solid #334155;
+
+    border-radius: 20px;
+
+    background: #111827;
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 40px rgba(56, 189, 248, 0.08),
+        0 20px 50px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LINHA AZUL
+========================= */
+
+.tela-inicial::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 20px rgba(56, 189, 248, 0.8);
+}
+
+
+/* =========================
+   TERMINAL
+========================= */
+
+.terminal {
+
+    text-align: left;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.cursor {
+
+    color: #38bdf8;
+
+    animation: piscar 1s infinite;
+}
+
+
+@keyframes piscar {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-jogo {
+
+    margin-top: 30px;
+}
+
+
+.status {
+
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 30px;
+}
+
+
+.titulo-jogo h1 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: clamp(55px, 10vw, 100px);
+
+    line-height: 0.9;
+
+    letter-spacing: 8px;
+
+    color: #f8fafc;
+
+    text-shadow:
+        0 0 10px rgba(56, 189, 248, 0.2),
+        0 0 30px rgba(56, 189, 248, 0.1);
+}
+
+
+.titulo-jogo h2 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: clamp(35px, 7vw, 65px);
+
+    letter-spacing: 15px;
+
+    color: #38bdf8;
+
+    margin-top: 8px;
+
+    text-shadow:
+        0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+
+.subtitulo {
+
+    margin-top: 25px;
+
+    color: #94a3b8;
+
+    letter-spacing: 5px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu-jogo {
+
+    margin: 40px 0;
+}
+
+
+.start {
+
+    position: relative;
+
+    background: transparent;
+
+    border: 1px solid #38bdf8;
+
+    color: #38bdf8;
+
+    padding: 18px 45px;
+
+    border-radius: 8px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+
+.start:hover {
+
+    background: #38bdf8;
+
+    color: #0f172a;
+
+    box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.5);
+
+    transform: scale(1.05);
+}
+
+
+.seta {
+
+    margin-right: 10px;
+
+    animation:
+        moverSeta 1s infinite;
+}
+
+
+@keyframes moverSeta {
+
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    border-top: 1px solid #334155;
+
+    border-bottom: 1px solid #334155;
+
+    padding: 20px;
+}
+
+
+.informacoes div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.informacoes span {
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+.informacoes strong {
+
+    color: #7dd3fc;
+
+    font-size: 13px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 650px) {
+
+    body.index {
+        padding: 10px;
+    }
+
+
+    .tela-inicial {
+
+        min-height: 550px;
+
+        padding: 25px;
+
+    }
+
+
+    .titulo-jogo h1 {
+
+        letter-spacing: 5px;
+
+    }
+
+
+    .titulo-jogo h2 {
+
+        letter-spacing: 8px;
+
+    }
+
+
+    .subtitulo {
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .informacoes {
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
+

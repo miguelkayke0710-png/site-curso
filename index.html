@@ -1,31 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Miguel Kayke | Portfolio</title>
+
+    <link rel="stylesheet" href="style/index.css">
 
 </head>
+
 <body class="index">
 
-    <div class="links">
+    <main class="tela-inicial">
 
-        <nav>
-            <button class="button-index" onclick="window.location.href='mapa.html'">Clique aqui para começar a jogar</button>
+        <!-- TERMINAL -->
+
+        <div class="terminal">
+
+            <span>user@miguel:~/portfolio$</span>
+            <span class="cursor">_</span>
+
+        </div>
+
+
+        <!-- TÍTULO DO JOGO -->
+
+        <section class="titulo-jogo">
+
+            <p class="status">
+                SYSTEM ONLINE
+            </p>
+
+            <h1>
+                MIGUEL
+            </h1>
+
+            <h2>
+                KAYKE
+            </h2>
+
+            <p class="subtitulo">
+                DEVELOPER IN TRAINING
+            </p>
+
+        </section>
+
+
+        <!-- MENU -->
+
+        <nav class="menu-jogo">
+
+            <button
+                class="start"
+                onclick="window.location.href='mapa.html'">
+
+                <span class="seta">▶</span>
+
+                START GAME
+
+            </button>
+
         </nav>
 
-    </div>
+
+        <!-- INFORMAÇÕES -->
+
+        <section class="informacoes">
+
+            <div>
+                <span>PLAYER</span>
+                <strong>MIGUEL KAYKE</strong>
+            </div>
+
+            <div>
+                <span>LEVEL</span>
+                <strong>01</strong>
+            </div>
+
+            <div>
+                <span>CLASS</span>
+                <strong>DEVELOPER</strong>
+            </div>
+
+        </section>
 
 
+        <!-- RODAPÉ -->
 
+        <footer>
 
+            <p>
+                PORTFOLIO v1.0
+            </p>
 
+            <p>
+                PRESS START TO BEGIN
+            </p>
 
+        </footer>
 
-
-
-
+    </main>
 
 </body>
+
 </html>

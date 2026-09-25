@@ -1,0 +1,500 @@
+/*experiencia.html*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    padding: 30px;
+}
+
+
+/* TERMINAL */
+
+.terminal {
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* CABEÇALHO */
+
+.topo {
+    padding: 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.terminal-text {
+    color: #94a3b8;
+
+    margin-bottom: 8px;
+}
+
+
+.topo h1 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 32px;
+
+    letter-spacing: 3px;
+}
+
+
+.subtitulo {
+    color: #94a3b8;
+
+    margin-top: 8px;
+}
+
+
+.cursor {
+    color: #38bdf8;
+
+    animation: piscar 1s infinite;
+}
+
+
+@keyframes piscar {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+
+/* STATUS */
+
+.status {
+    color: #38bdf8;
+
+    border: 1px solid #38bdf8;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+.bolinha {
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+
+    background: #38bdf8;
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.8);
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+
+    gap: 25px;
+
+    padding: 15px 30px;
+
+    background: #0f172a;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.menu a {
+    color: #94a3b8;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover,
+.menu .ativo {
+    color: #38bdf8;
+
+    text-shadow:
+        0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+
+/* INTRO */
+
+.intro {
+    padding: 50px 30px 30px;
+}
+
+
+.comando {
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+
+.intro h2,
+.evolucao h2 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+
+.intro > p:last-child {
+    color: #94a3b8;
+
+    max-width: 650px;
+
+    line-height: 1.6;
+}
+
+
+/* EXPERIÊNCIAS */
+
+.experiencias {
+    padding: 30px;
+}
+
+
+/* CARD DA EXPERIÊNCIA */
+
+.experiencia {
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+
+.experiencia:hover {
+    border-color: #38bdf8;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(56, 189, 248, 0.08);
+}
+
+
+/* TOPO DO CARD */
+
+.experiencia-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.numero {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.status-experiencia {
+    color: #38bdf8;
+
+    font-size: 12px;
+}
+
+
+/* TÍTULO */
+
+.experiencia h3 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+.experiencia h4 {
+    color: #38bdf8;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+
+
+.periodo {
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-bottom: 30px;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #334155;
+}
+
+
+.secao h5 {
+    color: #7dd3fc;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+/* LISTA */
+
+.secao ul {
+    list-style: none;
+}
+
+
+.secao li {
+    color: #94a3b8;
+
+    margin-bottom: 12px;
+
+    line-height: 1.5;
+}
+
+
+.secao li::before {
+    content: "> ";
+
+    color: #38bdf8;
+}
+
+
+/* HABILIDADES */
+
+.habilidades {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.habilidades span {
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    color: #7dd3fc;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+
+.habilidades span:hover {
+    border-color: #38bdf8;
+
+    color: #38bdf8;
+}
+
+
+/* XP */
+
+.xp {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #334155;
+}
+
+
+.xp-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+.xp-info span:last-child {
+    color: #38bdf8;
+}
+
+
+.barra {
+    width: 100%;
+
+    height: 8px;
+
+    background: #0f172a;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progresso {
+    width: 65%;
+
+    height: 100%;
+
+    background: #38bdf8;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+
+/* RODAPÉ */
+
+footer {
+    border-top: 1px solid #334155;
+
+    padding: 20px 30px;
+
+    background: #0f172a;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .terminal {
+        border-radius: 15px;
+    }
+
+
+    .topo {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .topo h1 {
+        font-size: 25px;
+    }
+
+
+    .menu {
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+
+    .intro {
+        padding: 35px 20px 20px;
+    }
+
+
+    .experiencias {
+        padding: 20px;
+    }
+
+
+    .experiencia {
+        padding: 22px;
+    }
+
+
+    .experiencia-topo {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+}

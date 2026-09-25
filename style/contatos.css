@@ -1,0 +1,442 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    padding: 30px;
+}
+
+
+.terminal {
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+.topo {
+
+    padding: 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.terminal-text {
+
+    color: #94a3b8;
+
+    margin-bottom: 8px;
+}
+
+
+.topo h1 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 32px;
+
+    letter-spacing: 3px;
+}
+
+
+.subtitulo {
+
+    color: #94a3b8;
+
+    margin-top: 8px;
+}
+
+.cursor {
+
+    color: #38bdf8;
+
+    animation: piscar 1s infinite;
+}
+
+
+@keyframes piscar {
+
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+
+}
+
+.status {
+
+    color: #38bdf8;
+
+    border: 1px solid #38bdf8;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+.bolinha {
+
+    display: inline-block;
+
+    width: 8px;
+
+    height: 8px;
+
+    background: #38bdf8;
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.8);
+}
+
+.menu {
+
+    display: flex;
+
+    gap: 25px;
+
+    padding: 15px 30px;
+
+    background: #0f172a;
+
+    border-bottom: 1px solid #334155;
+
+    flex-wrap: wrap;
+}
+
+.menu a {
+
+    color: #94a3b8;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu .ativo {
+
+    color: #38bdf8;
+
+    text-shadow:
+        0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.intro {
+
+    padding: 50px 30px 30px;
+}
+
+
+.comando {
+
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.intro > p:last-child {
+
+    color: #94a3b8;
+
+    max-width: 650px;
+
+    line-height: 1.6;
+}
+
+.contatos {
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.contato {
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.contato::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #38bdf8;
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.3s;
+}
+
+
+.contato:hover {
+
+    border-color: #38bdf8;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(56, 189, 248, 0.08);
+}
+
+.contato:hover::before {
+
+    transform: scaleX(1);
+}
+
+.contato-topo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.numero {
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.tipo {
+
+    color: #38bdf8;
+
+    font-size: 11px;
+
+    border: 1px solid #334155;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+}
+
+.contato h3 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+}
+
+.descricao {
+
+    color: #94a3b8;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.dados {
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+
+.dados span {
+
+    color: #7dd3fc;
+
+    font-size: 13px;
+
+    word-break: break-word;
+}
+
+.botao {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #38bdf8;
+
+    border: 1px solid #38bdf8;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+.botao:hover {
+
+    background: #38bdf8;
+
+    color: #0f172a;
+
+    box-shadow:
+        0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+footer {
+
+    border-top: 1px solid #334155;
+
+    padding: 20px 30px;
+
+    background: #0f172a;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .terminal {
+        border-radius: 15px;
+    }
+
+
+    .topo {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .topo h1 {
+
+        font-size: 25px;
+    }
+
+
+    .menu {
+
+        padding: 15px;
+
+        gap: 15px;
+    }
+
+
+    .intro {
+
+        padding: 35px 20px 20px;
+    }
+
+
+    .contatos {
+
+        padding: 20px;
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .contato {
+
+        padding: 22px;
+    }
+
+}
+
